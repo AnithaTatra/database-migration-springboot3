@@ -22,6 +22,9 @@ public class Author {
     @Column(length = 100, nullable = false)
     private String password;
 
+    @Column(unique = true, length = 100, nullable = false)
+    private String email;
+
     @Column(nullable = false, columnDefinition = "tinyint not null default 0")
     private boolean enabled;
 
